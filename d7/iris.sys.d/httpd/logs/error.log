@@ -1,0 +1,6 @@
+[Mon Aug 19 09:38:11.571626 2019] [mpm_worker:notice] [pid 837:tid 140273115881984] AH00292: Apache/2.4.20 (Unix) OpenSSL/1.0.2h configured -- resuming normal operations
+[Mon Aug 19 09:38:11.572094 2019] [core:notice] [pid 837:tid 140273115881984] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /ISC/iris.sys.d/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Mon Aug 19 09:43:21.472168 2019] [mpm_worker:notice] [pid 788:tid 139691987063296] AH00292: Apache/2.4.20 (Unix) OpenSSL/1.0.2h configured -- resuming normal operations
+[Mon Aug 19 09:43:21.473487 2019] [core:notice] [pid 788:tid 139691987063296] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /ISC/iris.sys.d/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Mon Aug 19 09:45:29.742411 2019] [mpm_worker:notice] [pid 788:tid 140143640490496] AH00292: Apache/2.4.20 (Unix) OpenSSL/1.0.2h configured -- resuming normal operations
+[Mon Aug 19 09:45:29.743436 2019] [core:notice] [pid 788:tid 140143640490496] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /ISC/iris.sys.d/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for UNIX (Red Hat Enterprise Linux for x86-64) 2018.1 (Build 268U)" ts="2017-08-04 10:44:11">
+<Class name="App.Installer">
+<IncludeCode>%occInclude</IncludeCode>
+<Super>%RegisteredObject</Super>
+<TimeChanged>64499,38651.417807</TimeChanged>
+<TimeCreated>64499,38171.452238</TimeCreated>
+
+<XData name="AppConfig">
+<XMLNamespace>INSTALLER</XMLNamespace>
+<Data><![CDATA[
+<Manifest>
+      
+  <SystemSetting Name="Config.config.globals8kb" Value='${GLOBALBUFFERS}' />
+  <SystemSetting Name="Config.config.routines" Value='${ROUTINEBUFFERS}' />
+  <!-- <SystemSetting Name="Config.Startup.EnsembleAutoStart" Value="1" /> -->
+
+  <Namespace Name="MYAPP" Create="yes" Code="MYCODE" Data="MYDATA">
+    <Configuration>
+	<Database Name="MYCODE" Create="yes" Dir="/MYCODE" />
+    <Database Name="MYDATA" Create="yes" Dir="/MYDATA" />	
+    </Configuration>
+
+    <Log Text="Importing myapp" Level="0"/>
+	<Import File='${ISC_PACKAGE_INSTALLDIR}/mgr/myapp.ro' Flags="cuk" Recurse="true">
+	</Import>
+
+	<!-- <Invoke Class="Ens.Production" Method="Start" CheckStatus="true">
+                <Arg Value="Param1"/>
+                <Arg Value="Param2"/>
+        </Invoke> -->
+
+  </Namespace>
+  <Namespace Name="%SYS" Create="no">
+  	<Log Text="Importinng ZSTU" Level="0"/>
+	<Import File='${ISC_PACKAGE_INSTALLDIR}/mgr/myappZSTU.ro' Flags="cuk" Recurse="true">
+	</Import>
+  </Namespace>
+
+</Manifest>
+]]></Data>
+</XData>
+
+<Method name="setup">
+<Internal>1</Internal>
+<ClassMethod>1</ClassMethod>
+<CodeMode>objectgenerator</CodeMode>
+<FormalSpec><![CDATA[&pVars,pLogLevel:%Integer=3,pInstaller:%Installer.Installer,pLogger:%Installer.AbstractLogger]]></FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+   #; Let XGL document generate code for this method. 
+   Quit ##class(%Installer.Manifest).%Generate(%compiledclass, %code, "AppConfig")
+]]></Implementation>
+</Method>
+
+<Method name="implementDesiredSystemState">
+<Description>
+Invoke the installer passing in some variables
+</Description>
+<ClassMethod>1</ClassMethod>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	#dim tVars
+	#dim tStatus As %Status
+	#dim tLogLevel As %Integer = 0
+	
+	// Initialize any variables we want to pass to the installer
+	set tVars("GLOBALBUFFERS") = 1000
+	set tVars("ROUTINEBUFFERS") = 512 
+	set tVars("ISC_PACKAGE_INSTALLDIR") = "/usr/irissys/"	
+
+	// Invoke the installer
+	set sc = ..setup(.tVars,tLogLevel,"","")
+	
+	do:$$$ISERR(sc) $system.OBJ.DisplayError(sc)
+	
+	quit sc
+]]></Implementation>
+</Method>
+</Class>
+</Export>

@@ -1,0 +1,10 @@
+Cache for UNIX^INT^test for containers^~Format=Cache.S~^RAW
+%RO on 14 Apr 2015   3:15 PM
+ZSTU^INT^1^63655,65236^0
+ZSTU ; Startup routine the myapp application 
+ zn "MYAPP"
+ job ^myapp
+ quit
+
+
+

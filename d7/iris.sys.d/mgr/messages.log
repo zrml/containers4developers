@@ -1,0 +1,462 @@
+08/19/19-09:38:03.377 (366) 0 Moving data directory of instance IRIS to /ISC/iris.sys.d
+08/19/19-09:38:03.377 (366) 0 ISC_DATA_DIRECTORY=/ISC/iris.sys.d
+08/19/19-09:38:03.383 (366) 0 Creating directory /ISC/iris.sys.d
+08/19/19-09:38:03.384 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d
+08/19/19-09:38:03.397 (366) 0 Creating directory /ISC/iris.sys.d/mgr/
+08/19/19-09:38:03.399 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/mgr/
+08/19/19-09:38:03.403 (366) 0 Executing cp -fp /usr/irissys/mgr/messages.log /ISC/iris.sys.d/mgr/messages.log
+08/19/19-09:38:03.408 (366) 0 Executing cp -f /usr/irissys/mgr/clone.log_366 /ISC/iris.sys.d/mgr/messages.log
+08/19/19-09:38:03.417 (366) 0 Executing rm -f /usr/irissys/mgr/clone.log_366
+08/19/19-09:38:03.423 (366) 0 Executing cp -fp /usr/irissys/mgr/.product /ISC/iris.sys.d/mgr/.product
+08/19/19-09:38:03.432 (366) 0 Executing cp -fp /usr/irissys/mgr/IRIS.DAT /ISC/iris.sys.d/mgr/IRIS.DAT
+08/19/19-09:38:03.771 (366) 0 Executing cp -fp /usr/irissys/mgr/ilock /ISC/iris.sys.d/mgr/ilock
+08/19/19-09:38:03.782 (366) 0 Executing cp -fp /usr/irissys/mgr/iris.key /ISC/iris.sys.d/mgr/iris.key
+08/19/19-09:38:03.793 (366) 0 Executing cp -fp /usr/irissys/mgr/irisodbc.ini /ISC/iris.sys.d/mgr/irisodbc.ini
+08/19/19-09:38:03.809 (366) 0 Executing cp -Rpf /usr/irissys/mgr/irisaudit/* /ISC/iris.sys.d/mgr/irisaudit/
+08/19/19-09:38:03.839 (366) 0 Executing cp -Rpf /usr/irissys/mgr/irislocaldata/* /ISC/iris.sys.d/mgr/irislocaldata/
+08/19/19-09:38:03.867 (366) 0 Executing cp -Rpf /usr/irissys/mgr/user/* /ISC/iris.sys.d/mgr/user/
+08/19/19-09:38:03.902 (366) 0 Creating directory /ISC/iris.sys.d/mgr/journal/
+08/19/19-09:38:03.909 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/mgr/journal/
+08/19/19-09:38:03.920 (366) 0 Executing cp -fp /usr/irissys/iris.cpf /ISC/iris.sys.d/iris.cpf
+08/19/19-09:38:04.027 (366) 0 Creating directory /ISC/iris.sys.d/httpd/
+08/19/19-09:38:04.033 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/httpd/
+08/19/19-09:38:04.049 (366) 0 Creating directory /ISC/iris.sys.d/httpd/logs/
+08/19/19-09:38:04.056 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/httpd/logs/
+08/19/19-09:38:04.071 (366) 0 Creating directory /ISC/iris.sys.d/httpd/conf/
+08/19/19-09:38:04.079 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/httpd/conf/
+08/19/19-09:38:04.091 (366) 0 Executing cp -fp /usr/irissys/httpd/conf/httpd.conf /ISC/iris.sys.d/httpd/conf/httpd.conf
+08/19/19-09:38:04.115 (366) 0 Creating directory /ISC/iris.sys.d/csp/
+08/19/19-09:38:04.121 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/csp/
+08/19/19-09:38:04.136 (366) 0 Creating directory /ISC/iris.sys.d/csp/temp/
+08/19/19-09:38:04.142 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/csp/temp/
+08/19/19-09:38:04.157 (366) 0 Creating directory /ISC/iris.sys.d/csp/bin/
+08/19/19-09:38:04.163 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/csp/bin/
+08/19/19-09:38:04.175 (366) 0 Executing cp -fp /usr/irissys/csp/bin/CSP.ini /ISC/iris.sys.d/csp/bin/CSP.ini
+08/19/19-09:38:04.187 (366) 0 Executing cp -fp /usr/irissys/csp/bin/CSPRT.ini /ISC/iris.sys.d/csp/bin/CSPRT.ini
+08/19/19-09:38:04.202 (366) 0 Creating directory /ISC/iris.sys.d/dist/
+08/19/19-09:38:04.209 (366) 0 Executing chown root:root /ISC/iris.sys.d/dist/
+08/19/19-09:38:04.223 (366) 0 Creating directory /ISC/iris.sys.d/dist/install/
+08/19/19-09:38:04.230 (366) 0 Executing chown root:root /ISC/iris.sys.d/dist/install/
+08/19/19-09:38:04.242 (366) 0 Creating directory /ISC/iris.sys.d/dist/install/misc/
+08/19/19-09:38:04.248 (366) 0 Executing chown irisowner:irisuser /ISC/iris.sys.d/dist/install/misc/
+08/19/19-09:38:04.257 (366) 0 Executing cp -fp /usr/irissys/dist/install/misc/buildver /ISC/iris.sys.d/dist/install/misc/buildver
+08/19/19-09:38:04.270 (366) 0 File copy complete
+08/19/19-09:38:04.275 (366) 0 Updating configuation files
+08/19/19-09:38:04.509 (366) 0 Executing iris update IRIS datadir=/ISC/iris.sys.d
+08/19/19-09:38:04.529 (366) 0 Executing cp -fp /usr/irissys/bin/irismgr /usr/irissys/bin/irisinstall
+08/19/19-09:38:04.537 (366) 0 Executing cp -fp /usr/irissys/bin/irisuxsusr /usr/irissys/bin/irisuxsinst
+08/19/19-09:38:04.547 (366) 0 Executing /usr/irissys/bin/irisinstall -s/ISC/iris.sys.d/mgr/ -cc -g20 -W1 -B -C/ISC/iris.sys.d/iris.cpf*INSTALL
+08/19/19-09:38:04:607 (413) 0 [Generic.Event] Allocated 683MB shared memory: 20MB global buffers, 512MB routine buffers
+08/19/19-09:38:04:611 (413) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge AES-NI instructions detected.
+08/19/19-09:38:04:619 (413) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /ISC/iris.sys.d/mgr/IRIS.WIJ
+08/19/19-09:38:04:621 (413) 0 [WriteDaemon.CreatingNewWIJ] Creating a new WIJ file
+08/19/19-09:38:04:724 (413) 0 [WriteDaemon.CreatedNewWIJ] New WIJ file created
+08/19/19-09:38:04:731 (413) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2019.3 (Build 302U) Wed Jul 17 2019 15:20:32 EDT]
+	in /usr/irissys/bin/
+	with mgr: /ISC/iris.sys.d/mgr
+	with wij: /ISC/iris.sys.d/mgr/IRIS.WIJ
+	from: /ISC/iris.sys.d/mgr/
+  OS=[Linux], version=[#1 SMP Tue Jul 2 22:58:16 UTC 2019], release=[4.9.184-linuxkit], machine=[x86_64]
+  nodename=[db3bd7e8e08d].
+  numasyncwijbuf: 0, swdwrtmax: 0, wijdirectio: off, synctype: 3
+  System Initialized.
+08/19/19-09:38:04.740 (366) 0 Executing cat /ISC/iris.sys.d/mgr/install.in
+08/19/19-09:38:04:742 (414) 0 [WriteDaemon.Started] Write daemon started.
+ZN "%SYS"
+k ^CONFIG
+k ^SYS("CONFIG")
+k ^SYS("GREDIR")
+k ^SYS("GUID")
+k ^SYS("INSTANCEGUID")
+k ^SYS("NSMAP")
+k ^SYS("NSMAPSUB")
+k ^SYS("NewNSStartup")
+k ^SYS("RESTORE")
+k ^SYS("UCI")
+s ^%SYS("Shut") = ""
+k ^%SYS("Shut","Fail")
+s ^SYS("SHUTDOWN","JRNCLEAN")=$ZTIMESTAMP_"^"_"SHUTDOWN"
+s ^SYS("SHUTDOWN","TPCLEAN")=$ZTIMESTAMP_"^"_"SHUTDOWN"
+s Status=##Class(SYS.Clone).UpdateGlobals(##Class(%File).NormalizeDirectory("/usr/irissys"),##Class(%File).NormalizeDirectory("/ISC/iris.sys.d"),1)
+HALT
+08/19/19-09:38:04.754 (366) 0 Executing /usr/irissys/bin/irisuxsinst -s/ISC/iris.sys.d/mgr/ -B -V
+08/19/19-09:38:04:785 (426) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/ (SFN 0) read-write.
+08/19/19-09:38:04:808 (426) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+08/19/19-09:38:05.154 (366) 0 Executing rm -f /ISC/iris.sys.d/mgr/install.in
+08/19/19-09:38:05.163 (366) 0 Executing /usr/irissys/bin/irisuxsinst -s/ISC/iris.sys.d/mgr/ -B -V INT^SHUTDOWN
+08/19/19-09:38:05:181 (428) 0 [Utility.Event] Shutting down InterSystems IRIS
+08/19/19-09:38:05:189 (428) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irislocaldata/ (SFN 2) read-write.
+08/19/19-09:38:05:195 (428) 0 [Utility.Event] Notifying Clients
+08/19/19-09:38:05:196 (428) 0 [Utility.Event] No user shutdown routines to execute
+08/19/19-09:38:05:198 (428) 0 [Utility.Event] Stopping User Jobs
+08/19/19-09:38:05:200 (428) 0 [Utility.Event] Stopping Network Servers
+08/19/19-09:38:05:202 (428) 0 [Utility.Event] Withdrawing from License Domain
+08/19/19-09:38:05:204 (428) 0 [Utility.Event] Waiting for users to stop
+08/19/19-09:38:05:205 (428) 0 [Utility.Event] Stopping Client Networking
+08/19/19-09:38:05:206 (428) 0 [Utility.Event] Removing database locks
+08/19/19-09:38:05:212 (428) 0 [Utility.Event] Updating Journal File
+08/19/19-09:38:05:212 (428) 0 [Utility.Event] Skip jrnwait as WIJ update is disabled
+08/19/19-09:38:06:215 (428) 0 [Utility.Event] Waiting for database updates to complete
+08/19/19-09:38:06:222 (428) 0 [Utility.Event] Database updates complete
+08/19/19-09:38:06:225 (428) 0 [Utility.Event] Stopping System Jobs
+08/19/19-09:38:06:334 (424) 0 [Generic.Event] EXPDMN exited due to system shutdown
+08/19/19-09:38:06:335 (415) 0 [Generic.Event] GARCOL exited due to system shutdown
+08/19/19-09:38:06:335 (416) 0 [Generic.Event] JRNDMN exited due to system shutdown
+08/19/19-09:38:06:438 (419) 0 [Generic.Event] SWRTDMN #1 exited due to system shutdown
+08/19/19-09:38:06:439 (420) 0 [Generic.Event] SWRTDMN #5 exited due to system shutdown
+08/19/19-09:38:06:440 (418) 0 [Generic.Event] SWRTDMN #6 exited due to system shutdown
+08/19/19-09:38:06:439 (417) 0 [Generic.Event] SWRTDMN #4 exited due to system shutdown
+08/19/19-09:38:06:438 (421) 0 [Generic.Event] SWRTDMN #2 exited due to system shutdown
+08/19/19-09:38:06:439 (422) 0 [Generic.Event] SWRTDMN #3 exited due to system shutdown
+08/19/19-09:38:06:440 (423) 0 [Generic.Event] SWRTDMN #7 exited due to system shutdown
+08/19/19-09:38:06:943 (414) 0 [Generic.Event] No blocks pending in WIJ file
+08/19/19-09:38:06:950 (414) 0 [Generic.Event] WRTDMN exited due to system shutdown
+08/19/19-09:38:07:048 (413) 0 [Generic.Event] CONTROL exited due to system shutdown
+08/19/19-09:38:08:145 (428) 0 [Utility.Event] Shutdown complete
+08/19/19-09:38:08.176 (366) 0 Executing rm -f /usr/irissys/bin/irisinstall
+08/19/19-09:38:08.186 (366) 0 Executing rm -f /usr/irissys/bin/irisuxsinst
+08/19/19-09:38:08.196 (366) 0 Executing rm -f /ISC/iris.sys.d/CloneIncomplete
+08/19/19-09:38:08.204 (366) 0 Instance IRIS data directory moved to /ISC/iris.sys.d
+08/19/19-09:38:08.212 (366) 0 Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+08/19/19-09:38:08.321 (366) 0 Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Mon Aug 19 09:38:08 2019
+     Current default directory: /ISC/iris.sys.d/mgr
+     Log file directory: /ISC/iris.sys.d/mgr/
+     WIJ file spec: /ISC/iris.sys.d/mgr/IRIS.WIJ
+Recovering local (/ISC/iris.sys.d/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/ISC/iris.sys.d/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+08/19/19-09:38:08:565 (800) 0 [Generic.Event] Allocated 1718MB shared memory: 1000MB global buffers, 512MB routine buffers
+08/19/19-09:38:08:568 (800) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge AES-NI instructions detected.
+08/19/19-09:38:08:598 (800) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /ISC/iris.sys.d/mgr/IRIS.WIJ
+08/19/19-09:38:08:601 (800) 0 [Generic.Event] No journaling info from prior system
+08/19/19-09:38:08:603 (800) 0 [WriteDaemon.CreatingNewWIJ] Creating a new WIJ file
+08/19/19-09:38:09:042 (800) 0 [WriteDaemon.CreatedNewWIJ] New WIJ file created
+08/19/19-09:38:09:051 (800) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2019.3 (Build 302U) Wed Jul 17 2019 15:20:32 EDT]
+	in /usr/irissys/bin/
+	with mgr: /ISC/iris.sys.d/mgr
+	with wij: /ISC/iris.sys.d/mgr/IRIS.WIJ
+	from: /ISC/iris.sys.d/mgr/
+  OS=[Linux], version=[#1 SMP Tue Jul 2 22:58:16 UTC 2019], release=[4.9.184-linuxkit], machine=[x86_64]
+  nodename=[db3bd7e8e08d].
+  numasyncwijbuf: 0, swdwrtmax: 0, wijdirectio: off, synctype: 3
+  System Initialized.
+08/19/19-09:38:09:056 (801) 0 [WriteDaemon.Started] Write daemon started.
+08/19/19-09:38:09:074 (812) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/ (SFN 0) read-write.
+08/19/19-09:38:09:085 (812) 0 [Utility.Event] Instance 'IRIS' starting on node db3bd7e8e08d by user irisuser
+08/19/19-09:38:09:086 (812) 0 [Utility.Event] Using parameters from file '/ISC/iris.sys.d/iris.cpf'
+08/19/19-09:38:09:088 (812) 0 [Utility.Event] Loading DLLs
+08/19/19-09:38:09:089 (812) 0 [Utility.Event] Switching to temporary %SYS Namespace
+08/19/19-09:38:09:090 (801) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+08/19/19-09:38:09:091 (812) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+08/19/19-09:38:09:093 (812) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+08/19/19-09:38:09:119 (812) 0 [Utility.Event] Creating missing IRISTEMP database in /ISC/iris.sys.d/mgr/iristemp
+08/19/19-09:38:09:135 (812) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/iristemp/ (SFN 2) read-write.
+08/19/19-09:38:09:146 (812) 0 [Utility.Event] /ISC/iris.sys.d/mgr/iristemp/ initialized as IRISTEMP
+08/19/19-09:38:09:155 (812) 0 [Utility.Event] Switching to default %SYS Namespace
+08/19/19-09:38:09:163 (812) 0 [Utility.Event] Added ethernet device eth0@if129 to default list
+08/19/19-09:38:09:180 (813) 0 [Utility.Event] Log Monitor Started
+08/19/19-09:38:09:295 (814) 0 [Utility.Event] Clean Daemon Started
+08/19/19-09:38:09:302 (812) 1 [Utility.Event] Configuration file /ISC/iris.sys.d/iris.cpf is not the same as when last shut down
+08/19/19-09:38:10:233 (812) 0 [Utility.Event] Updating configuration information from /ISC/iris.sys.d/iris.cpf
+08/19/19-09:38:10:286 (812) 0 [Utility.Event] Performing Journal Recovery
+08/19/19-09:38:10:288 (812) 0 [Utility.Event] Graceful system shutdown, journal restore not required
+08/19/19-09:38:10:289 (812) 0 [Utility.Event] Graceful system shutdown, transaction rollback not required
+08/19/19-09:38:10:292 (812) 2 [Utility.Event] LMF Error: No valid license key. Local key file not found and LicenseID not defined.
+08/19/19-09:38:10:299 (812) 0 [Utility.Event] START: /ISC/iris.sys.d/mgr/journal/20190819.002
+08/19/19-09:38:10:300 (812) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+08/19/19-09:38:10:307 (812) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /ISC/iris.sys.d/mgr/journal/20190819.002
+08/19/19-09:38:10:308 (812) 0 [Utility.Event] Journaling to /ISC/iris.sys.d/mgr/journal/20190819.002 started.
+08/19/19-09:38:10:311 (812) 0 [Utility.Event] Processing Startup section
+08/19/19-09:38:10:336 (825) 0 [Utility.Event] Purging old application errors
+08/19/19-09:38:10:340 (812) 0 [Utility.Event] Created temp directory /ISC/iris.sys.d/mgr/Temp
+08/19/19-09:38:10:349 (812) 0 [Utility.Event] Initializing Security system
+08/19/19-09:38:10:374 (825) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irislocaldata/ (SFN 3) read-write.
+08/19/19-09:38:10:387 (812) 0 [Utility.Event] Processing Network section
+08/19/19-09:38:10:390 (812) 0 [Utility.Event] Activating Network
+08/19/19-09:38:10:609 (812) 0 [Utility.Event] Processing Databases section
+08/19/19-09:38:10:641 (812) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irisaudit/ (SFN 4) read-write.
+08/19/19-09:38:10:664 (812) 0 [Utility.Event] Processing Namespaces section
+08/19/19-09:38:10:665 (812) 0 [Utility.Event] Loading all namespaces
+08/19/19-09:38:10:686 (801) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+08/19/19-09:38:10:689 (812) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 5) read-only. File or filesystem allows read-only access. 
+08/19/19-09:38:10:727 (812) 0 [Utility.Event] Activating namespaces
+08/19/19-09:38:10:729 (812) 0 [Utility.Event] Activating new namespace map
+08/19/19-09:38:10:743 (812) 0 [Utility.Event] Namespace changes have been activated
+08/19/19-09:38:10:744 (812) 0 [Utility.Event] Rebuilding Extent index for all namespaces
+08/19/19-09:38:10:753 (812) 0 [Utility.Event] Rebuilding Extent index for namespace %SYS
+08/19/19-09:38:10:974 (812) 0 [Utility.Event] Rebuilding Extent index for namespace MYAPP
+08/19/19-09:38:10:983 (812) 0 [Database.MountedRW] Mounted database /MYDATA/ (SFN 6) read-write.
+08/19/19-09:38:10:991 (812) 0 [Database.MountedRW] Mounted database /MYCODE/ (SFN 7) read-write.
+08/19/19-09:38:11:064 (812) 0 [Utility.Event] Rebuilding Extent index for namespace USER
+08/19/19-09:38:11:074 (812) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/user/ (SFN 8) read-write.
+08/19/19-09:38:11:104 (812) 0 [Utility.Event] Rebuild of Extent index completed
+08/19/19-09:38:11:110 (812) 0 [Utility.Event] Starting Super Server on port 51773
+08/19/19-09:38:11:127 (812) 0 [Utility.Event] Network Lock Upload Phase Starting
+08/19/19-09:38:11:128 (812) 0 [Utility.Event] Lock Upload Phase Complete
+08/19/19-09:38:11:129 (812) 0 [Utility.Event] Processing Miscellaneous section
+08/19/19-09:38:11:163 (832) 0 [Utility.Event] Starting Servers
+08/19/19-09:38:11:163 (812) 0 [Generic.Event] init_gcr_seed:  gen_crypt_rand seeded from /dev/urandom:  64 bytes.
+08/19/19-09:38:11:164 (812) 0 [Utility.Event] Processing Devices section
+08/19/19-09:38:11:166 (812) 0 [Utility.Event] Processing DeviceSubTypes section
+08/19/19-09:38:11:167 (812) 0 [Utility.Event] Processing MagTape section
+08/19/19-09:38:11:168 (812) 0 [Utility.Event] Processing IO section
+08/19/19-09:38:11:169 (812) 0 [Utility.Event] Processing SQL section
+08/19/19-09:38:11:589 (832) 0 [Utility.Event] Private webserver started on 52773
+08/19/19-09:38:11:592 (832) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+08/19/19-09:38:11:594 (832) 0 [Utility.Event] Processing Monitor section
+08/19/19-09:38:11:628 (843) 0 [Utility.Event] Starting TASKMGR
+08/19/19-09:38:11:648 (844) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+08/19/19-09:38:11:648 (812) 0 [Generic.Event] Auditing to /ISC/iris.sys.d/mgr/irisaudit/
+08/19/19-09:38:11:660 (812) 0 [Utility.Event] Executing ^ZSTU routine
+08/19/19-09:38:11:684 (812) 0 [Utility.Event] Executing ^%ZSTART routine
+08/19/19-09:38:11:685 (812) 0 [Utility.Event] Enabling logons
+08/19/19-09:38:11:688 (812) 0 [Utility.Event] Initializing Interoperability during system startup
+08/19/19-09:38:11:695 (812) 0 [Utility.Event] Not licensed for Interoperability, auto-start skipped.
+08/19/19-09:43:17.560 (371) 0 ISC_DATA_DIRECTORY=/ISC/iris.sys.d
+08/19/19-09:43:17.564 (371) 0 Executing iris qlist
+08/19/19-09:43:17.582 (371) 0 Versions are the same
+08/19/19-09:43:17.587 (371) 0 Source /usr/irissys: 2019.3.0.302.0
+08/19/19-09:43:17.591 (371) 0 Destination /ISC/iris.sys.d: 2019.3.0.302.0
+08/19/19-09:43:17.595 (371) 0 Executing iris update IRIS directory=/usr/irissys datadir=/ISC/iris.sys.d versionid=2019.3.0.302.0
+08/19/19-09:43:17.605 (371) 0 Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+08/19/19-09:43:17.640 (371) 0 Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Mon Aug 19 09:43:17 2019
+     Current default directory: /ISC/iris.sys.d/mgr
+     Log file directory: /ISC/iris.sys.d/mgr/
+     WIJ file spec: /ISC/iris.sys.d/mgr/IRIS.WIJ
+Recovering local (/ISC/iris.sys.d/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/ISC/iris.sys.d/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+WIJ pass # is 0.
+Starting fast WIJ compare
+Finished comparing 4 blocks in 0 seconds
+Exiting with status 3 (Success)
+08/19/19-09:43:17:896 (754) 0 [Generic.Event] Allocated 1718MB shared memory: 1000MB global buffers, 512MB routine buffers
+08/19/19-09:43:17:899 (754) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge AES-NI instructions detected.
+08/19/19-09:43:17:929 (754) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /ISC/iris.sys.d/mgr/IRIS.WIJ
+08/19/19-09:43:17:931 (754) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 15
+	fspec: /ISC/iris.sys.d/mgr/journal/20190819.002
+	filecnt: 1
+	fileoff: 132800
+	prevfcnt: 1
+	prevfileoeff: 131072
+	min trans cnt: 1
+	min trans index: 131072
+08/19/19-09:43:17:935 (754) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2019.3 (Build 302U) Wed Jul 17 2019 15:20:32 EDT]
+	in /usr/irissys/bin/
+	with mgr: /ISC/iris.sys.d/mgr
+	with wij: /ISC/iris.sys.d/mgr/IRIS.WIJ
+	from: /ISC/iris.sys.d/mgr/
+  OS=[Linux], version=[#1 SMP Tue Jul 2 22:58:16 UTC 2019], release=[4.9.184-linuxkit], machine=[x86_64]
+  nodename=[308ed9cc17c5].
+  numasyncwijbuf: 0, swdwrtmax: 0, wijdirectio: off, synctype: 3
+  System Initialized.
+08/19/19-09:43:17:946 (755) 0 [WriteDaemon.Started] Write daemon started.
+08/19/19-09:43:17:956 (766) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/ (SFN 0) read-write.
+08/19/19-09:43:17:976 (766) 0 [Utility.Event] Instance 'IRIS' starting on node 308ed9cc17c5 by user irisuser
+08/19/19-09:43:17:977 (766) 0 [Utility.Event] Using parameters from file '/ISC/iris.sys.d/iris.cpf'
+08/19/19-09:43:17:979 (766) 0 [Utility.Event] Loading DLLs
+08/19/19-09:43:17:980 (766) 0 [Utility.Event] Switching to temporary %SYS Namespace
+08/19/19-09:43:17:981 (755) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+08/19/19-09:43:17:982 (766) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+08/19/19-09:43:17:986 (766) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+08/19/19-09:43:18:031 (766) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/iristemp/) might be in use from (db3bd7e8e08d) sfn(2)
+08/19/19-09:43:18:031 (766) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/iristemp/) might be in use from (db3bd7e8e08d) sfn(2)...(repeated 1 times)
+08/19/19-09:43:18:048 (766) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/iristemp/ (SFN 2) read-write.
+08/19/19-09:43:18:060 (766) 0 [Utility.Event] /ISC/iris.sys.d/mgr/iristemp/ initialized as IRISTEMP
+08/19/19-09:43:18:069 (766) 0 [Utility.Event] Switching to default %SYS Namespace
+08/19/19-09:43:18:081 (766) 0 [Utility.Event] Added ethernet device eth0@if139 to default list
+08/19/19-09:43:18:103 (767) 0 [Utility.Event] Log Monitor Started
+08/19/19-09:43:18:204 (766) 2 [Utility.Event] Previous system shutdown was abnormal, system forced down or crashed
+08/19/19-09:43:18:209 (766) 2 [Utility.Event] System appears to have failed over from node db3bd7e8e08d
+08/19/19-09:43:18:223 (768) 0 [Utility.Event] Clean Daemon Started
+08/19/19-09:43:18:234 (766) 0 [Utility.Event] Updating configuration information from /ISC/iris.sys.d/iris.cpf
+08/19/19-09:43:18:326 (766) 0 [Utility.Event] Performing Journal Recovery
+08/19/19-09:43:20:398 (766) 0 [Utility.Event] Restoring from journal /ISC/iris.sys.d/mgr/journal/20190819.002
+08/19/19-09:43:20:415 (766) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/irisaudit/) might be in use from (db3bd7e8e08d) sfn(4)
+08/19/19-09:43:20:420 (766) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irisaudit/ (SFN 3) read-write.
+08/19/19-09:43:20:423 (766) 1 [Utility.Event] [JOURNAL RESTORE] Not restoring /usr/irissys/mgr/enslib/ because the database is not journaled
+08/19/19-09:43:20:431 (766) 0 [Database.MountedRW] Mounted database /MYDATA/ (SFN 4) read-write.
+08/19/19-09:43:20:443 (766) 0 [Database.MountedRW] Mounted database /MYCODE/ (SFN 5) read-write.
+08/19/19-09:43:20:454 (766) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/user/) might be in use from (db3bd7e8e08d) sfn(8)
+08/19/19-09:43:20:460 (766) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/user/ (SFN 6) read-write.
+08/19/19-09:43:20:486 (766) 0 [Utility.Event] Performing Transaction Rollback if necessary
+08/19/19-09:43:20:503 (766) 0 [Utility.Event]   Scanning /ISC/iris.sys.d/mgr/journal/20190819.002
+08/19/19-09:43:20:505 (766) 0 [Utility.Event] No open transactions to roll back
+08/19/19-09:43:20:509 (766) 2 [Utility.Event] LMF Error: No valid license key. Local key file not found and LicenseID not defined.
+08/19/19-09:43:20:527 (766) 0 [Utility.Event] START: /ISC/iris.sys.d/mgr/journal/20190819.003
+08/19/19-09:43:20:530 (766) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+08/19/19-09:43:20:543 (766) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /ISC/iris.sys.d/mgr/journal/20190819.003
+08/19/19-09:43:20:545 (766) 0 [Utility.Event] Journaling to /ISC/iris.sys.d/mgr/journal/20190819.003 started.
+08/19/19-09:43:20:550 (766) 0 [Utility.Event] Processing Startup section
+08/19/19-09:43:20:561 (777) 0 [Utility.Event] Purging old application errors
+08/19/19-09:43:20:576 (766) 0 [Utility.Event] Initializing Security system
+08/19/19-09:43:20:591 (777) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/irislocaldata/) might be in use from (db3bd7e8e08d) sfn(3)
+08/19/19-09:43:20:597 (777) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irislocaldata/ (SFN 7) read-write.
+08/19/19-09:43:20:608 (766) 0 [Utility.Event] Processing Network section
+08/19/19-09:43:20:611 (766) 0 [Utility.Event] Activating Network
+08/19/19-09:43:20:835 (766) 0 [Utility.Event] Processing Databases section
+08/19/19-09:43:20:867 (766) 0 [Utility.Event] Processing Namespaces section
+08/19/19-09:43:20:869 (766) 0 [Utility.Event] Namespaces are up to date
+08/19/19-09:43:20:871 (766) 0 [Utility.Event] Activating namespaces
+08/19/19-09:43:20:872 (766) 0 [Utility.Event] Activating new namespace map
+08/19/19-09:43:20:942 (766) 0 [Utility.Event] Namespace changes have been activated
+08/19/19-09:43:20:947 (766) 0 [Utility.Event] Starting Super Server on port 51773
+08/19/19-09:43:20:962 (766) 0 [Utility.Event] Network Lock Upload Phase Starting
+08/19/19-09:43:20:963 (766) 0 [Utility.Event] Lock Upload Phase Complete
+08/19/19-09:43:20:964 (766) 0 [Utility.Event] Processing Miscellaneous section
+08/19/19-09:43:21:003 (783) 0 [Utility.Event] Starting Servers
+08/19/19-09:43:21:003 (766) 0 [Generic.Event] init_gcr_seed:  gen_crypt_rand seeded from /dev/urandom:  64 bytes.
+08/19/19-09:43:21:005 (766) 0 [Utility.Event] Processing Devices section
+08/19/19-09:43:21:007 (766) 0 [Utility.Event] Processing DeviceSubTypes section
+08/19/19-09:43:21:008 (766) 0 [Utility.Event] Processing MagTape section
+08/19/19-09:43:21:010 (766) 0 [Utility.Event] Processing IO section
+08/19/19-09:43:21:012 (766) 0 [Utility.Event] Processing SQL section
+08/19/19-09:43:21:469 (783) 0 [Utility.Event] Private webserver started on 52773
+08/19/19-09:43:21:471 (783) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+08/19/19-09:43:21:473 (783) 0 [Utility.Event] Processing Monitor section
+08/19/19-09:43:21:502 (794) 0 [Utility.Event] Starting TASKMGR
+08/19/19-09:43:21:527 (795) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+08/19/19-09:43:21:543 (766) 0 [Generic.Event] Auditing to /ISC/iris.sys.d/mgr/irisaudit/
+08/19/19-09:43:21:553 (766) 0 [Utility.Event] Executing ^ZSTU routine
+08/19/19-09:43:21:574 (766) 0 [Utility.Event] Executing ^%ZSTART routine
+08/19/19-09:43:21:576 (766) 0 [Utility.Event] Enabling logons
+08/19/19-09:43:21:577 (766) 0 [Utility.Event] Initializing Interoperability during system startup
+08/19/19-09:43:21:579 (766) 0 [Utility.Event] Not licensed for Interoperability, auto-start skipped.
+08/19/19-09:43:28:091 (767) 0 [Utility.Event] PROCESS 766 generated 3 alerts in 0 seconds. Suspending alert notifications for this process.
+08/19/19-09:44:00:446 (765) 0 [Database.StartExpansion] Starting Expansion for database /ISC/iris.sys.d/mgr/iristemp/. 10 MB requested.
+08/19/19-09:44:00:451 (765) 0 [Database.FullExpansion] Expansion completed for database /ISC/iris.sys.d/mgr/iristemp/. Expanded by 10 MB.
+08/19/19-09:45:26.891 (368) 0 ISC_DATA_DIRECTORY=/ISC/iris.sys.d
+08/19/19-09:45:26.895 (368) 0 Executing iris qlist
+08/19/19-09:45:26.912 (368) 0 Versions are the same
+08/19/19-09:45:26.916 (368) 0 Source /usr/irissys: 2019.3.0.302.0
+08/19/19-09:45:26.920 (368) 0 Destination /ISC/iris.sys.d: 2019.3.0.302.0
+08/19/19-09:45:26.924 (368) 0 Executing iris update IRIS directory=/usr/irissys datadir=/ISC/iris.sys.d versionid=2019.3.0.302.0
+08/19/19-09:45:26.934 (368) 0 Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+08/19/19-09:45:27.037 (368) 0 Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Mon Aug 19 09:45:27 2019
+     Current default directory: /ISC/iris.sys.d/mgr
+     Log file directory: /ISC/iris.sys.d/mgr/
+     WIJ file spec: /ISC/iris.sys.d/mgr/IRIS.WIJ
+Recovering local (/ISC/iris.sys.d/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/ISC/iris.sys.d/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+WIJ pass # is 0.
+Starting fast WIJ compare
+Finished comparing 14 blocks in 0 seconds
+Exiting with status 3 (Success)
+08/19/19-09:45:27:316 (753) 0 [Generic.Event] Allocated 1718MB shared memory: 1000MB global buffers, 512MB routine buffers
+08/19/19-09:45:27:318 (753) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge AES-NI instructions detected.
+08/19/19-09:45:27:348 (753) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /ISC/iris.sys.d/mgr/IRIS.WIJ
+08/19/19-09:45:27:351 (753) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 15
+	fspec: /ISC/iris.sys.d/mgr/journal/20190819.003
+	filecnt: 2
+	fileoff: 140872
+	prevfcnt: 2
+	prevfileoeff: 140672
+	min trans cnt: 2
+	min trans index: 131072
+08/19/19-09:45:27:356 (753) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2019.3 (Build 302U) Wed Jul 17 2019 15:20:32 EDT]
+	in /usr/irissys/bin/
+	with mgr: /ISC/iris.sys.d/mgr
+	with wij: /ISC/iris.sys.d/mgr/IRIS.WIJ
+	from: /ISC/iris.sys.d/mgr/
+  OS=[Linux], version=[#1 SMP Tue Jul 2 22:58:16 UTC 2019], release=[4.9.184-linuxkit], machine=[x86_64]
+  nodename=[bd5e443acf5a].
+  numasyncwijbuf: 0, swdwrtmax: 0, wijdirectio: off, synctype: 3
+  System Initialized.
+08/19/19-09:45:27:357 (754) 0 [WriteDaemon.Started] Write daemon started.
+08/19/19-09:45:27:373 (765) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/ (SFN 0) read-write.
+08/19/19-09:45:27:397 (765) 0 [Utility.Event] Instance 'IRIS' starting on node bd5e443acf5a by user irisuser
+08/19/19-09:45:27:398 (765) 0 [Utility.Event] Using parameters from file '/ISC/iris.sys.d/iris.cpf'
+08/19/19-09:45:27:401 (765) 0 [Utility.Event] Loading DLLs
+08/19/19-09:45:27:402 (765) 0 [Utility.Event] Switching to temporary %SYS Namespace
+08/19/19-09:45:27:403 (754) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+08/19/19-09:45:27:404 (765) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+08/19/19-09:45:27:410 (765) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+08/19/19-09:45:27:461 (765) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/iristemp/) might be in use from (308ed9cc17c5) sfn(2)
+08/19/19-09:45:27:461 (765) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/iristemp/) might be in use from (308ed9cc17c5) sfn(2)...(repeated 1 times)
+08/19/19-09:45:27:483 (765) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/iristemp/ (SFN 2) read-write.
+08/19/19-09:45:27:496 (765) 0 [Utility.Event] /ISC/iris.sys.d/mgr/iristemp/ initialized as IRISTEMP
+08/19/19-09:45:27:507 (765) 0 [Utility.Event] Switching to default %SYS Namespace
+08/19/19-09:45:27:521 (765) 0 [Utility.Event] Added ethernet device eth0@if147 to default list
+08/19/19-09:45:27:545 (766) 0 [Utility.Event] Log Monitor Started
+08/19/19-09:45:27:645 (765) 2 [Utility.Event] Previous system shutdown was abnormal, system forced down or crashed
+08/19/19-09:45:27:652 (765) 2 [Utility.Event] System appears to have failed over from node 308ed9cc17c5
+08/19/19-09:45:27:667 (767) 0 [Utility.Event] Clean Daemon Started
+08/19/19-09:45:27:680 (765) 0 [Utility.Event] Updating configuration information from /ISC/iris.sys.d/iris.cpf
+08/19/19-09:45:27:787 (765) 0 [Utility.Event] Performing Journal Recovery
+08/19/19-09:45:28:863 (765) 0 [Utility.Event] Restoring from journal /ISC/iris.sys.d/mgr/journal/20190819.003
+08/19/19-09:45:28:875 (765) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/irisaudit/) might be in use from (308ed9cc17c5) sfn(3)
+08/19/19-09:45:28:880 (765) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irisaudit/ (SFN 3) read-write.
+08/19/19-09:45:28:895 (765) 0 [Database.MountedRW] Mounted database /MYDATA/ (SFN 4) read-write.
+08/19/19-09:45:28:903 (765) 0 [Database.MountedRW] Mounted database /MYCODE/ (SFN 5) read-write.
+08/19/19-09:45:28:908 (765) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/user/) might be in use from (308ed9cc17c5) sfn(6)
+08/19/19-09:45:28:914 (765) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/user/ (SFN 6) read-write.
+08/19/19-09:45:28:936 (769) 0 [Generic.Event] JrnRest Dejournal Prefetch Daemon startup failed
+08/19/19-09:45:28:937 (765) 0 [Utility.Event] Performing Transaction Rollback if necessary
+08/19/19-09:45:28:948 (765) 0 [Utility.Event]   Scanning /ISC/iris.sys.d/mgr/journal/20190819.003
+08/19/19-09:45:28:950 (765) 0 [Utility.Event] No open transactions to roll back
+08/19/19-09:45:28:954 (765) 2 [Utility.Event] LMF Error: No valid license key. Local key file not found and LicenseID not defined.
+08/19/19-09:45:28:965 (765) 0 [Utility.Event] START: /ISC/iris.sys.d/mgr/journal/20190819.004
+08/19/19-09:45:28:967 (765) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+08/19/19-09:45:28:977 (765) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /ISC/iris.sys.d/mgr/journal/20190819.004
+08/19/19-09:45:28:978 (765) 0 [Utility.Event] Journaling to /ISC/iris.sys.d/mgr/journal/20190819.004 started.
+08/19/19-09:45:28:982 (765) 0 [Utility.Event] Processing Startup section
+08/19/19-09:45:28:991 (776) 0 [Utility.Event] Purging old application errors
+08/19/19-09:45:29:003 (765) 0 [Utility.Event] Initializing Security system
+08/19/19-09:45:29:013 (776) 1 [Generic.Event] DB(/ISC/iris.sys.d/mgr/irislocaldata/) might be in use from (308ed9cc17c5) sfn(7)
+08/19/19-09:45:29:018 (776) 0 [Database.MountedRW] Mounted database /ISC/iris.sys.d/mgr/irislocaldata/ (SFN 7) read-write.
+08/19/19-09:45:29:036 (765) 0 [Utility.Event] Processing Network section
+08/19/19-09:45:29:039 (765) 0 [Utility.Event] Activating Network
+08/19/19-09:45:29:260 (765) 0 [Utility.Event] Processing Databases section
+08/19/19-09:45:29:291 (765) 0 [Utility.Event] Processing Namespaces section
+08/19/19-09:45:29:292 (765) 0 [Utility.Event] Namespaces are up to date
+08/19/19-09:45:29:293 (765) 0 [Utility.Event] Activating namespaces
+08/19/19-09:45:29:295 (765) 0 [Utility.Event] Activating new namespace map
+08/19/19-09:45:29:338 (765) 0 [Utility.Event] Namespace changes have been activated
+08/19/19-09:45:29:342 (765) 0 [Utility.Event] Starting Super Server on port 51773
+08/19/19-09:45:29:352 (765) 0 [Utility.Event] Network Lock Upload Phase Starting
+08/19/19-09:45:29:353 (765) 0 [Utility.Event] Lock Upload Phase Complete
+08/19/19-09:45:29:354 (765) 0 [Utility.Event] Processing Miscellaneous section
+08/19/19-09:45:29:380 (765) 0 [Generic.Event] init_gcr_seed:  gen_crypt_rand seeded from /dev/urandom:  64 bytes.
+08/19/19-09:45:29:380 (783) 0 [Utility.Event] Starting Servers
+08/19/19-09:45:29:382 (765) 0 [Utility.Event] Processing Devices section
+08/19/19-09:45:29:384 (765) 0 [Utility.Event] Processing DeviceSubTypes section
+08/19/19-09:45:29:384 (765) 0 [Utility.Event] Processing MagTape section
+08/19/19-09:45:29:385 (765) 0 [Utility.Event] Processing IO section
+08/19/19-09:45:29:386 (765) 0 [Utility.Event] Processing SQL section
+08/19/19-09:45:29:744 (765) 0 [Generic.Event] Auditing to /ISC/iris.sys.d/mgr/irisaudit/
+08/19/19-09:45:29:754 (765) 0 [Utility.Event] Executing ^ZSTU routine
+08/19/19-09:45:29:774 (783) 0 [Utility.Event] Private webserver started on 52773
+08/19/19-09:45:29:776 (783) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+08/19/19-09:45:29:778 (765) 0 [Utility.Event] Executing ^%ZSTART routine
+08/19/19-09:45:29:779 (783) 0 [Utility.Event] Processing Monitor section
+08/19/19-09:45:29:779 (765) 0 [Utility.Event] Enabling logons
+08/19/19-09:45:29:782 (765) 0 [Utility.Event] Initializing Interoperability during system startup
+08/19/19-09:45:29:784 (765) 0 [Utility.Event] Not licensed for Interoperability, auto-start skipped.
+08/19/19-09:45:29:811 (796) 0 [Utility.Event] Starting TASKMGR
+08/19/19-09:45:29:825 (797) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+08/19/19-09:45:37:584 (766) 0 [Utility.Event] PROCESS 765 generated 3 alerts in 0 seconds. Suspending alert notifications for this process.

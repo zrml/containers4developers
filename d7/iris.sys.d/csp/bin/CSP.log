@@ -1,0 +1,27 @@
+>>> Time: Mon Aug 19 09:38:11 2019; RT Build: 1903.1731 (linux/apapi); Log-Level: 0; Gateway-PID: 835; Gateway-TID: 140273115881984
+    Initialization
+    The Web Gateway module '/usr/irissys/csp/bin/CSPa24.so' is loaded (IPv6 Enabled; MAX_CONNECTIONS=1024; MAX_SERVERS=9; MAX_APPLICATIONS=280; MAX_RESPONSE_BUFFER_SIZE=128000; Connection_Allocation=First Free; Nagle_Algorithm=Disabled; SHM=OS; IPC=DS)
+>>> Time: Mon Aug 19 09:38:11 2019; RT Build: 1903.1731 (linux/apapi); Log-Level: 0; Gateway-PID: 837; Gateway-TID: 140273115881984
+    Initialization: Apache Parent Process
+    Global Configuration Block Initialized: PID=837; SHMID=6; SHMType=0;
+>>> Time: Mon Aug 19 09:38:31 2019; RT Build: 1903.1731 (linux/apapi:srv=2.4.20/apr=1.5.2/apu=1.5.4/mpm=worker); Log-Level: 0; Gateway-PID: 840; Gateway-TID: 140273073956608
+    Initialization
+    The GZIP library (/usr/irissys/csp/bin/libz.so) is loaded - Version: 1.2.11 (Gateway built with version 1.2.11).  This library is used for the optional GZIP compression facility.
+>>> Time: Mon Aug 19 09:43:21 2019; RT Build: 1903.1731 (linux/apapi); Log-Level: 0; Gateway-PID: 787; Gateway-TID: 139691987063296
+    Initialization
+    The Web Gateway module '/usr/irissys/csp/bin/CSPa24.so' is loaded (IPv6 Enabled; MAX_CONNECTIONS=1024; MAX_SERVERS=9; MAX_APPLICATIONS=280; MAX_RESPONSE_BUFFER_SIZE=128000; Connection_Allocation=First Free; Nagle_Algorithm=Disabled; SHM=OS; IPC=DS)
+>>> Time: Mon Aug 19 09:43:21 2019; RT Build: 1903.1731 (linux/apapi); Log-Level: 0; Gateway-PID: 788; Gateway-TID: 139691987063296
+    Initialization: Apache Parent Process
+    Global Configuration Block Initialized: PID=788; SHMID=6; SHMType=0;
+>>> Time: Mon Aug 19 09:43:23 2019; RT Build: 1903.1731 (linux/apapi:srv=2.4.20/apr=1.5.2/apu=1.5.4/mpm=worker); Log-Level: 0; Gateway-PID: 790; Gateway-TID: 139691856750336
+    Initialization
+    The GZIP library (/usr/irissys/csp/bin/libz.so) is loaded - Version: 1.2.11 (Gateway built with version 1.2.11).  This library is used for the optional GZIP compression facility.
+>>> Time: Mon Aug 19 09:45:29 2019; RT Build: 1903.1731 (linux/apapi); Log-Level: 0; Gateway-PID: 787; Gateway-TID: 140143640490496
+    Initialization
+    The Web Gateway module '/usr/irissys/csp/bin/CSPa24.so' is loaded (IPv6 Enabled; MAX_CONNECTIONS=1024; MAX_SERVERS=9; MAX_APPLICATIONS=280; MAX_RESPONSE_BUFFER_SIZE=128000; Connection_Allocation=First Free; Nagle_Algorithm=Disabled; SHM=OS; IPC=DS)
+>>> Time: Mon Aug 19 09:45:29 2019; RT Build: 1903.1731 (linux/apapi); Log-Level: 0; Gateway-PID: 788; Gateway-TID: 140143640490496
+    Initialization: Apache Parent Process
+    Global Configuration Block Initialized: PID=788; SHMID=6; SHMType=0;
+>>> Time: Mon Aug 19 09:45:49 2019; RT Build: 1903.1731 (linux/apapi:srv=2.4.20/apr=1.5.2/apu=1.5.4/mpm=worker); Log-Level: 0; Gateway-PID: 792; Gateway-TID: 140143365121792
+    Initialization
+    The GZIP library (/usr/irissys/csp/bin/libz.so) is loaded - Version: 1.2.11 (Gateway built with version 1.2.11).  This library is used for the optional GZIP compression facility.

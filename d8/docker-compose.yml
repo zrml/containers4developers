@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  iris1:
+    build: 
+      context: build/.
+      args:
+        imageName: iris:2019.3-shard-instance-ready
+    image: iris:2019.3-shard-instance-ready 
+    command: --key /ISC/iris.key --after 'iris session IRIS "##class(%SYSTEM.Cluster).Initialize()"'
+    hostname: iris1
+    volumes:
+     - ${PWD}:/ISC
+    ports:
+      - "9011:51773"
+      - "9012:52773"
+
+  iris2:
+    image: iris:2019.3-shard-instance-ready
+    command: --key /ISC/iris.key --after 'sleep 5 && iris session IRIS "##class(%SYSTEM.Cluster).AttachAsDataNode(\"IRIS://iris1:51773/IRISCLUSTER\")"'
+    hostname: iris2
+    volumes:
+     - ${PWD}:/ISC
+    depends_on: 
+      - iris1
+
+  iris3:
+    image: iris:2019.3-shard-instance-ready
+    command: --key /ISC/iris.key --after 'sleep 5 && iris session IRIS "##class(%SYSTEM.Cluster).AttachAsDataNode(\"IRIS://iris1:51773/IRISCLUSTER\")"'
+    hostname: iris3
+    volumes:
+     - ${PWD}:/ISC
+    depends_on: 
+      - iris1

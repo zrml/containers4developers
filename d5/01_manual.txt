@@ -1,0 +1,19 @@
+1)
+Just like in a preceding exercise where we learnt that we can map a directory or a file,
+we can use the same trick.
+Here we map an executable to its internal (to the container) location
+-v $PWD/iris.exe:/usr/irissys/bin/iris.exe
+
+2)
+We can of course just copy a file on top of the old one as in a traditional environment.
+Here is the 'dockercp' command
+docker cp iris.exe <container-id>:/usr/irissys/bin/iris.exe
+
+3)
+Run it, use it, push it & share it, discard it
+$ docker run -d my-special.kit:0.1
+$ curl http://localhost:8080
+$ docker exec -it <container-id> bash
+$ docker push <repo/container-image-name:ver>
+$ docker rm -f my-special.kit:0.1
+--
