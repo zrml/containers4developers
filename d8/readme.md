@@ -41,8 +41,8 @@ As a developer I need to be able to create a "cluster" on my laptop. The cloud i
 	```
 	+ and copy/paste the following SQL INSERT statements
 	
-	```SQL  
-INSERT INTO T1 VALUES('John', 1111) 
+	```   
+INSERT INTO T1 VALUES('John', 1111)  
 INSERT INTO T1 VALUES('Scott', 1144)  
 INSERT INTO T1 VALUES('Simon', 1122)  
 INSERT INTO T1 VALUES('Fred', 1133)  
