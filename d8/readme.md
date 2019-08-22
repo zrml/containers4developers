@@ -18,17 +18,21 @@ As a developer I need to be able to create a "cluster" on my laptop. The cloud i
 + View the **docker-compose.yml** declaration
 	+ It describe *3 InterSytems IRIS instances* running in their respective containers.
 + Initially, as the container does not exist, it builds it.
-	+ you can find the information of what it builds in the ```./build``` subdirectory *Dockerfile*
-	+ it builds an InterSystems IRIS container image ready to work as a shard instances
-+ By running the **run.sh** shell scripts in the directory ```./d8``` you bring up (run) the **docker-compose** definition
+	+ You can find the information of what it builds in the ```./build``` subdirectory *Dockerfile*
+	+ It builds an InterSystems IRIS container image, ready to work as a shard instance. The container image will be tagged as *iris:2019.3-shard-instance-ready*
++ Run the **run.sh** shell scripts in this ```./d8``` directory. It'll bring up (run) the **docker-compose** definition  
+
+```
+$ ./run.sh
+```
+
 + Allow few seconds for the instances to connect to each other and then
-+ Connect to the [first node portal](http://localhost:9012/csp/sys/utilhome.csp) with
-+ Credentials _SYSTEM/SYS
++ Connect to the [first node portal](http://localhost:9012/csp/sys/utilhome.csp) with credentials _SYSTEM/SYS
 + Go and check that the 3 shard instances are all configured
-	+ Navigate to *System > Configuration > Sharding Configuration* and
-	+ Select *IRISCLUSTER* in the namespace. You should see the 3 IRIS instances
+	+ Navigate to *System Administration > Configuration > System Configuration > Sharding Configuration* and
+	+ Select *IRISCLUSTER* in the namespace list. You should see the 3 IRIS instances
 + Run the following SQL to satisfy yourself that the shards are correctly configured
-	+ Navigate to *System > SQL*, Switch namespace to IRISCLUSTER and 
+	+ Navigate to *System Explorer > SQL*, Switch namespace to IRISCLUSTER and 
 	+ Create a sharded Table ```CREATE TABLE T1 (name char(20), tel int, shard)```  
 	+ Then quickly SQL INSERT some data from the SQL Shell
 	+ from your host OS level get to the InterSystems IRIS SQL shell in the last shard for example  

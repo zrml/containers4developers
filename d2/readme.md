@@ -1,16 +1,16 @@
-#Use case
+# Use case
 I have some code I want to test...  
 instead of installing the environment needed, I just use a container with it. Basically I want to know if I can leverage pre-prepared containers with the technology I need.
 
 
-#Exposed Tech
+# Exposed Tech
 + Leverage pre-packaged interpreters, compilers, framework, databases, etc.
 + Dockerfile declaration
 + Dockerfile commands
 + Build command
 + Push to registry
 
-#Focus
+# Focus
 + Check the code we want to test in *server.js*
 + Check the Dockerfile; we leverage a pre-built & existing nodeJS container image
 + We tell the container to run nodeJS and pass our code to it

@@ -1,4 +1,4 @@
-#Use Case
+# Use Case  
 I get it, containers holds code and run processes.  
 What if I don't want to have to create new containers wasting time with the build process?  
 Is it possible to leverage pre-packaged interpreters, compilers, framework etc. 
@@ -6,7 +6,7 @@ and dynamically pass my code, info, html, css, images, config-files even,
 without building a container and have to copy things and create YAC (yet another container)?  
 
 
-#Exposed Tech
+# Exposed Tech  
 + No Dockerfile
 + No build process
 + Just testing my code, mapping it, without building any extra container
@@ -14,7 +14,7 @@ without building a container and have to copy things and create YAC (yet another
 + Developer does not have to copy code into the container or worse jump into it
 + leveraging a pre-packaged container image
 
-#Focus
+# Focus  
 + The file/code/config/etc. is here represented by the **index.html** file
 + Again we leverage a pre-packaged container: a *"simple"* Nginx web server
 + However, we do *not run the build process* creating a new container

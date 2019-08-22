@@ -20,7 +20,7 @@ $ ./run_gcc_9_1.sh
 + run the executable, for example  
 
 ```
-$ ./myapp_4_9.         # and similarly, for example
+$ ./myapp_4_9         # and similarly, for example
 $ ./myapp_9_1
 ```  
 

@@ -1,10 +1,11 @@
 
 # Use Case
-How about importing my IRIS Object Script application code?
+How about creating my container importing my IRIS Object Script application code?
 
 # Exposed Tech
-+ Creating my container with my IRIS ObjectScript code
-+ Creating a **MYCODE** only DB (see [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) between code and data) in the container
++ Creating my container deriving it from an InterSystems IRIS container image
++ The container has my IRIS ObjectScript app code
++ The build process creates a **MYCODE** only DB (see [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) between code and data) in the container
 + Defining an IRIS **MYAPP** *namespace* wiht mapping to MYCODE & MYDATA
 	+ The MYAPP namespace definition and the MYCODE database will be in the container, while the MYDATA database will be mounted at container startup from a host OS directory
 + Executing a %Installer declaration to tune the system, import code and create namespace and databases mappping at build time
@@ -32,11 +33,40 @@ USER irisowner
 	a) the InterSystems IRIS *2019.3 Preview* and  
 	b) a valid *iris.key* 
 	+ as soon as the 2019.3 CE edition will be published the requirements can be ignored. IOW as soon as the InterSystems IRIS 2019.3 Community Edition will be available [in the Docker Hub Registry](https://hub.docker.com/_/intersystems-iris-data-platform), you will not need the Preview version nor the key.
++ if the above requirements are satisfied, run the following commands to
+	+ build the container image that will have a new MYCODE db and a MYAPP namespace
+	+ runt the container that will bind mount the ```$PWD/MYDATA/IRIS.DAT``` as the MYDATA database in the InterSystems IRIS instance running in the container  
 
 ```
 $ ./buildContainer.sh  
 $ ./run.sh
+```  
+
++ Via a browser, [log into the system](http://localhost:52773/csp/sys/utilhome.csp) with credentials _SYSTEM/SYS and check the process...
+	+  *System Operation > Processes* 
++ Via the same browser, check the data that is constantly been written
+	+ *System Explorer > Globals*
+	+ Select the **MYAPP** Namespace on the left hand selector
+	+ Select the **View** link for the Global **^myappData** 
+
++ or if you prefer do the same ops via the terminal follow the instructions below
+	+ use %SS (system status; like a Linux *ps -ef*) to find the running process that is writing data to the **MYAPP** namespace in the **^myappData** global
+	+ and then switch Namespace (the ZN command) and output (ZW) the content of that global 
+
 ```
+# allow few seconds for the container to implement the Durable %SYS feature, then
+# look for the Routine myapp running in the MYAPP Namespace
+
+$ docker exec -it iris iris session IRIS
+>do ^%SS
+>
+
+# and check the data
+
+>zn "MYDATA"
+>zw ^myappData
+...
+```  
 
 ---
 

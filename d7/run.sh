@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# just in case I 'rm -f' the container, that is, IRIS does not come down cleanly
-rm ./MYDATA/iris.lck
+# just in case I 'rm -f' the container, that is, IRIS was brutally brought down...
+rm -f ./MYDATA/iris.lck
 
 docker run -d \
   -p 52773:52773 \

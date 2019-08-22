@@ -16,7 +16,7 @@ In general it's extremely easy
 ```
 $ docker build -t myapp:1 .
 ```  
-that will create a container image repo called ```myapp``` tagged as ```1```
+that will create a container image called ```myapp``` tagged as ```1```
 + run the app via  
 ```
 $ docker run myapp:1

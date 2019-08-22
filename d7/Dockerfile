@@ -22,13 +22,15 @@ RUN mkdir /MYCODE \
 # Create a new CODE db and load the code + mount the DATA db and define the MYAPP namespace + ZSTU
 # it's easier with irisowner as it's OS authenticated
 USER irisowner
-RUN iris start IRIS \
-    && iris session IRIS -U %SYS "##class(%SYSTEM.OBJ).Load(\"/usr/irissys/mgr/myappInstaller.xml\",\"cdk\")" \
-    && iris session IRIS -U %SYS "##class(App.Installer).implementDesiredSystemState()" \
-    && iris session IRIS -U %SYS "##class(SYS.Container).QuiesceForBundling()" \
-    && iris session IRIS -U %SYS "##class(SYS.Container).SetMonitorStateOK(\"irisowner\")" \
-    && iris session IRIS -U %SYS "##class(Security.Users).UnExpireUserPasswords(\"*\")" \
-    && iris stop IRIS quietly
+RUN iris start $ISC_PACKAGE_INSTANCENAME \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(%SYSTEM.OBJ).Load(\"/usr/irissys/mgr/myappInstaller.xml\",\"cdk\")" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(App.Installer).implementDesiredSystemState()" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).PreventFailoverMessage()" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).PreventJournalRolloverMessage()" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).SetMonitorStateOK(\"irisowner\")" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).QuiesceForBundling()" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(Security.Users).UnExpireUserPasswords(\"*\")" \
+    && iris stop $ISC_PACKAGE_INSTANCENAME quietly
 
 # housekeeping
 USER root
