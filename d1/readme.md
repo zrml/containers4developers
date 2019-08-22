@@ -22,10 +22,10 @@ that will create a container image called ```myapp``` tagged as ```1```
 $ docker run myapp:1
 ```  
 observer the output and consider what just happened  
-	+ the container was started from the local repository
-	+ the container run and
-	+ we saw the output
-	+ the container stopped  
++ the container was started from the local repository
++ the container run and
++ we saw the output
++ the container stopped  
 + check to see if the container is still running via  
 ```$ docker ps ```  
 
