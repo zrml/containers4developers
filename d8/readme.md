@@ -80,7 +80,7 @@ INSERT INTO T1 VALUES('Christian', 1290)
 INSERT INTO T1 VALUES('Steven', 1291)  
 INSERT INTO T1 VALUES('Helen', 1146)  
 	```
-+ Go back to your browser portal in *System > SQL* in namespace IRISCLUSTER and make sure you can see the data  
++ Go back to your browser portal in *System Explorer > SQL* in namespace IRISCLUSTER and make sure you can see the data  
 
 ```
 SELECT *
