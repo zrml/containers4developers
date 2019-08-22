@@ -1,8 +1,8 @@
 # Use Case
 Similar to the previous demo:  
 I do not want to create a container.  
-I just want to run *my code* while testing *different compilers*
-as I do not want to waste time installing four different C compilers versions
+I just want to compile *my code* while testing *different compilers*
+as I do not want to waste time installing and managing four different versions of the C compiler.
 
 # Exposed Tech
 + Leveraging prepackaged compilers 
