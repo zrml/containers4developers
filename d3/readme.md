@@ -1,6 +1,6 @@
 # Use Case  
 I get it, containers holds code and run processes.  
-What if I don't want to have to create new containers wasting time with the build process?  
+What if I don't want to create new containers, wasting time with the build process?  
 Is it possible to leverage pre-packaged interpreters, compilers, framework etc. 
 and dynamically pass my code, info, html, css, images, config-files even, 
 without building a container and have to copy things and create YAC (yet another container)?  
