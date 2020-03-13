@@ -30,12 +30,12 @@ USER irisowner
 + The subdirectory ./MYDATA is where the data database is located. This directory will be bind mounted by the IRIS container and will be the database of the MYAPP [namespace](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GORIENT_ch_enviro) and app.
 + Please note in the IRIS section of the Dockerfile new utilities that will grace 2019.3. They are useful as one prepares a clean application container [SYS.Container](link-TBD)
 + Requirements: to successfully *build* & *run* the **buildContainer.sh** you need to have  
-	a) the InterSystems IRIS *2019.3 Preview* and  
-	b) a valid *iris.key* 
-	+ as soon as the 2019.3 CE edition will be published the requirements can be ignored. IOW as soon as the InterSystems IRIS 2019.3 Community Edition will be available [in the Docker Hub Registry](https://hub.docker.com/_/intersystems-iris-data-platform), you will not need the Preview version nor the key.
+	a) InterSystems IRIS 2019.3 or later and  
+	b) a valid *iris.key* (note that the one in the repository is empty)
+	+ If you use InterSystems IRIS 2019.3 Community Edition [from the Docker Hub Registry](https://hub.docker.com/_/intersystems-iris-data-platform), you will not need the key.
 + if the above requirements are satisfied, run the following commands to
 	+ build the container image that will have a new MYCODE db and a MYAPP namespace
-	+ runt the container that will bind mount the ```$PWD/MYDATA/IRIS.DAT``` as the MYDATA database in the InterSystems IRIS instance running in the container  
+	+ run the container that will bind mount the ```$PWD/MYDATA/IRIS.DAT``` as the MYDATA database in the InterSystems IRIS instance running in the container.  Make sure that the IRIS user within the container (irisowner, UID 51773. GID 52773) has privilege to write to $PWD/MYDATA and $PWD/MYDATA/IRIS.DAT.  If not, the application will receive <PROTECT> errors and fail.
 
 ```
 $ ./buildContainer.sh  
