@@ -1,2 +1,1 @@
-printf "Hi Developers!"
-
+printf "Hi Developers!\n"

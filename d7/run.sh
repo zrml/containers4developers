@@ -4,6 +4,7 @@
 rm -f ./MYDATA/iris.lck
 
 docker run -d \
+  --rm \
   -p 52773:52773 \
   -v $PWD:/ISC \
   -v $PWD/MYDATA:/MYDATA \

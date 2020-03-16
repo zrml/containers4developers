@@ -27,7 +27,7 @@ RUN iris start $ISC_PACKAGE_INSTANCENAME \
     && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(App.Installer).implementDesiredSystemState()" \
     && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).PreventFailoverMessage()" \
     && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).PreventJournalRolloverMessage()" \
-    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).SetMonitorStateOK(\"irisowner\")" \
+    && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).SetMonitorStateOK()" \
     && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(SYS.Container).QuiesceForBundling()" \
     && iris session $ISC_PACKAGE_INSTANCENAME -U %SYS "##class(Security.Users).UnExpireUserPasswords(\"*\")" \
     && iris stop $ISC_PACKAGE_INSTANCENAME quietly
