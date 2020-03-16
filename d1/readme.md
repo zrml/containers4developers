@@ -4,7 +4,7 @@ It depends on the code and the dependencies...
 In general it's extremely easy
 
 # Exposed Tech
-+ possibly the simplest app in the world with mycode wrapped in a myapp container
++ Possibly the simplest app in the world with mycode wrapped in a myapp container
 + intro to Dockerfile declarative definition and its simple & portable commands
 
 # Focus
@@ -21,7 +21,7 @@ that will create a container image called ```myapp``` tagged as ```1```
 ```
 $ docker run myapp:1
 ```  
-observer the output and consider what just happened  
+Observe the output and consider what just happened  
 + the container was started from the local repository
 + the container run and
 + we saw the output
