@@ -6,7 +6,7 @@ function run()
 {
 	
   printf "\n\nStarting container...\n"	
-  docker run -d -p 8080:8080 --name js-srv $CONTAINER_IMAGE
+  docker run --rm -d -p 8080:8080 --name js-srv $CONTAINER_IMAGE
   printf "\nTry\ncurl http://localhost:8080\n"
 }
 
