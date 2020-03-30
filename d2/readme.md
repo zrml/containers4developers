@@ -17,8 +17,8 @@ instead of installing the environment needed, I just use a container with it. Ba
 + Run the **run.sh** script which runs the *Docker build* command for us and creates the container image *zrml/js-srv:1*
 + Note the full repository name of *zrml/js-srv*. That is needed as we will push the portable image to the Docker Hub to demonstrate its availability on the internet and its portabililty
 + The push command can be found below. Please be aware that  
-	1) you'll have to log into the Container Registry you'll want to use (in this case [Docker Hub](https://hub.docker.com)) and  
-	2) you'll have to use your Docker Hub repository name and retag the image with your repo name   
+	1) you'll have to log into the Container Registry you'll want to use (in this case [Docker Hub](login docker.com)) and  
+	2) you'll have to use your Docker Hub repository name and retag the image with your repo name similar to this one:  
 ```
 $ docker push zrml/js-srv:1
 ```  
