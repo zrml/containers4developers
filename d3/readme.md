@@ -30,3 +30,7 @@ http://localhost:8083
 + Edit the *index.html* greetings and refresh your browser to verify that Nginx is effectively picking up the file you intended to test   
 
 ---
+If you are using Docker for Windows, you should change the bind mount for index.html to 
+reflect Windows file specifications, similar to
+  -v c:/Users/<USER>/repos/containers4developers/d3/index.html:/usr/share/nginx/html/index.html \
+  
